@@ -1,48 +1,30 @@
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background: black;
+  text-align: center;
+  padding: 2rem;
 }
-.tagline {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #ccc;
-}
-.whatsapp-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.whatsapp-btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 .slider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-.slides img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    animation: slide 25s infinite;
-}
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: -100%;}
-    40% {margin-left: -200%;}
-    60% {margin-left: -300%;}
-    80% {margin-left: -400%;}
-    100% {margin-left: 0;}
+  height: 300px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
 }

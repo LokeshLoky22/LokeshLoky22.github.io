@@ -1,3 +1,1 @@
-
-// Placeholder for interactive scripts in future
-console.log('Amplyn loaded.');
+console.log('Chatbot and slider script goes here.');
