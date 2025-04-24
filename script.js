@@ -1,1 +1,0 @@
-console.log('Chatbot and slider script goes here.');
