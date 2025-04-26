@@ -6,6 +6,11 @@
   <title>Lokesh Inverter Installations</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>  
 </head>
 <body>
 
@@ -19,7 +24,26 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
+  <!-- Image Slider -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/car_installation.png" alt="Car Inverter Installation">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/bike_installation.png" alt="Bike Inverter Installation">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/home_installation.png" alt="Home Inverter Installation">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/heavy_vehicle_installation.png" alt="Heavy Vehicle Inverter Installation">
+    </div>
+    <div class="swiper-slide">
+      <img src="images/office_installation.png" alt="Office Inverter Installation">
+    </div>
+  </div>
+</div>
   <!-- Hero Section with Slideshow -->
   <section class="hero">
     <div class="slider">
@@ -54,6 +78,21 @@
   </a>
 
   <script src="script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    grabCursor: true,
+    effect: "slide",
+  });
+</script>
+
 </body>
 </html>
 
