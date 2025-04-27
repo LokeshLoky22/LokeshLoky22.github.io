@@ -1,11 +1,13 @@
-// Auto sliding images
-let slides = document.querySelectorAll(".slide");
-let current = 0;
+// script.js
 
-function nextSlide() {
-  slides[current].classList.remove("active");
-  current = (current + 1) % slides.length;
-  slides[current].classList.add("active");
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form");
 
-setInterval(nextSlide, 2000);
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your booking! We will contact you shortly.");
+      form.reset();
+    });
+  }
+});
