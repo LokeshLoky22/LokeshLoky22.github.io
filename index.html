@@ -3,98 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amplyn Battery Services</title>
+  <title>Amplyn Batteries | Home</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- <!-- Swiper CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>  
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
+  <header>
     <div class="logo">
-  <img src="logo.png" alt="Amplyn Logo" style="height: 50px;">
-</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- Image Slider -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="car_installation.png" alt="Car Inverter Installation">
+      <img src="amplyn-logo.png" alt="Amplyn Logo">
     </div>
-    <div class="swiper-slide">
-      <img src="bike_installation.png" alt="Bike Inverter Installation">
-    </div>
-    <div class="swiper-slide">
-      <img src="home_installation.png" alt="Home Inverter Installation">
-    </div>
-    <div class="swiper-slide">
-      <img src="heavy_vehicle_installation.png" alt="Heavy Vehicle Inverter Installation">
-    </div>
-    <div class="swiper-slide">
-      <img src="office_installation.png" alt="Office Inverter Installation">
-    </div>
-  </div>
-</div>
-  <!-- Hero Section with Slideshow -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section class="hero">
-    <div class="slider">
-      <img src="slide1.jpg" class="slide active">
-      <img src="slide2.jpg" class="slide">
-      <img src="slide3.jpg" class="slide">
-      <img src="slide4.jpg" class="slide">
-      <img src="slide5.jpg" class="slide">
-    </div>
-    <div class="hero-text">
-      <h1>Powering Your Journey</h1>
-      <p>Expert Inverter Installations for Cars, Bikes, Offices & Heavy Vehicles</p>
-      <a href="#appointment" class="btn">Book Appointment</a>
+    <h1>Welcome to Amplyn Batteries</h1>
+    <p>Premium Car, Bike, and Inverter Batteries Delivered Fast!</p>
+    <a href="services.html" class="btn">Explore Batteries</a>
+  </section>
+
+  <section class="batteries">
+    <h2>Our Categories</h2>
+    <div class="battery-cards">
+      <div class="card">
+        <img src="car-battery.jpg" alt="Car Battery">
+        <h3>Car Batteries</h3>
+        <a href="services.html#car" class="btn">Book Now</a>
+      </div>
+      <div class="card">
+        <img src="bike-battery.jpg" alt="Bike Battery">
+        <h3>Bike Batteries</h3>
+        <a href="services.html#bike" class="btn">Book Now</a>
+      </div>
+      <div class="card">
+        <img src="inverter-battery.jpg" alt="Inverter Battery">
+        <h3>Inverter Batteries</h3>
+        <a href="services.html#inverter" class="btn">Book Now</a>
+      </div>
     </div>
   </section>
 
-  <!-- Appointment Section -->
-  <section id="appointment" class="appointment">
-    <h2>Book an Appointment</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="text" placeholder="Phone Number" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea placeholder="Describe your Requirement" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+  <footer>
+    <p>© 2025 Amplyn Batteries. All rights reserved.</p>
+  </footer>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/919398216916" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <script src="script.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    speed: 800,
-    grabCursor: true,
-    effect: "slide",
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
-
