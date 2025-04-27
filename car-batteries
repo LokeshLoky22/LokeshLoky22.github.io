@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Batteries - Amplyn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="amplyn_logo.png" alt="Amplyn Logo" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="battery-list">
+    <h2>Car Batteries</h2>
+    <div class="battery-grid">
+
+      <div class="battery-item">
+        <h3>Amaron GO 105D31L</h3>
+        <p>Car Battery | 68AH | 36+30 Months Warranty</p>
+      </div>
+
+      <div class="battery-item">
+        <h3>Exide Mileage ML40LBH</h3>
+        <p>Car Battery | 35AH | 55 Months Warranty</p>
+      </div>
+
+      <div class="battery-item">
+        <h3>Amaron Black 35Ah</h3>
+        <p>Car Battery | 35AH | 18+18 Months Warranty</p>
+      </div>
+
+      <div class="battery-item">
+        <h3>Exide EEZY EY105D31L</h3>
+        <p>Car Battery | 68AH | 44 Months Warranty</p>
+      </div>
+
+      <!-- Add more car batteries here -->
+
+    </div>
+
+    <div class="booking-form">
+      <h3>Book Your Car Battery</h3>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="battery" required>
+          <option value="">Select Battery Model</option>
+          <option value="Amaron GO 105D31L">Amaron GO 105D31L</option>
+          <option value="Exide Mileage ML40LBH">Exide Mileage ML40LBH</option>
+          <option value="Amaron Black 35Ah">Amaron Black 35Ah</option>
+          <option value="Exide EEZY EY105D31L">Exide EEZY EY105D31L</option>
+        </select>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amplyn. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
