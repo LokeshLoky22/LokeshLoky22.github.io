@@ -3,55 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amplyn Batteries | Home</title>
+  <title>Amplyn Batteries - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <div class="logo">
-      <img src="amplyn-logo.png" alt="Amplyn Logo">
-    </div>
+    <img src="amplyn_logo.png" alt="Amplyn Logo" class="logo">
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
-    <h1>Welcome to Amplyn Batteries</h1>
-    <p>Premium Car, Bike, and Inverter Batteries Delivered Fast!</p>
-    <a href="services.html" class="btn">Explore Batteries</a>
+    <h1>Powering Your Ride with Trust</h1>
+    <p>Car Batteries | Bike Batteries | Inverter Batteries</p>
   </section>
 
-  <section class="batteries">
-    <h2>Our Categories</h2>
-    <div class="battery-cards">
-      <div class="card">
-        <img src="car-battery.jpg" alt="Car Battery">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      
+      <div class="service">
+        <img src="car_battery.jpg" alt="Car Batteries">
         <h3>Car Batteries</h3>
-        <a href="services.html#car" class="btn">Book Now</a>
+        <a href="car-batteries.html" class="btn">Book Now</a>
       </div>
-      <div class="card">
-        <img src="bike-battery.jpg" alt="Bike Battery">
+
+      <div class="service">
+        <img src="bike_battery.jpg" alt="Bike Batteries">
         <h3>Bike Batteries</h3>
-        <a href="services.html#bike" class="btn">Book Now</a>
+        <a href="bike-batteries.html" class="btn">Book Now</a>
       </div>
-      <div class="card">
-        <img src="inverter-battery.jpg" alt="Inverter Battery">
+
+      <div class="service">
+        <img src="inverter_battery.jpg" alt="Inverter Batteries">
         <h3>Inverter Batteries</h3>
-        <a href="services.html#inverter" class="btn">Book Now</a>
+        <a href="inverter-batteries.html" class="btn">Book Now</a>
       </div>
+
     </div>
   </section>
 
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="about">
+    <h2>About Amplyn</h2>
+    <p>At Amplyn, we offer trusted batteries from Amaron, Exide, Luminous, and Microtex. Quality assured products with doorstep service. </p>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91 99999 99999</p>
+    <p>Email: support@amplyn.com</p>
+    <p>Location: Hyderabad, India</p>
+  </section>
+
   <footer>
-    <p>© 2025 Amplyn Batteries. All rights reserved.</p>
+    <p>&copy; 2025 Amplyn. All rights reserved.</p>
   </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
