@@ -1,75 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amplyn Batteries - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amplyn - Power at your doorstep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f7f6f2;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 30px;
+      margin-right: 0.5rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: left;
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .service-card img {
+      height: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      background-color: #00c805;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin: 1rem;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+      margin: 0.3rem 0;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="Amplyn Logo" class="logo">
+    <div class="logo">
+      <img src="battery-icon.png" alt="Amplyn Logo" /> Amplyn
+    </div>
     <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Powering Your Ride with Trust</h1>
-    <p>Car Batteries | Bike Batteries | Inverter Batteries</p>
-  </section>
+  <div class="hero">
+    <img src="technician-installing.jpg" alt="Hero Image" />
+    <div class="hero-text">Power at your doorstep</div>
+  </div>
 
-  <!-- SERVICES SECTION -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-      
-      <div class="service">
-        <img src="car_battery.jpg" alt="Car Batteries">
-        <h3>Car Batteries</h3>
-        <a href="car-batteries.html" class="btn">Book Now</a>
-      </div>
-
-      <div class="service">
-        <img src="bike_battery.jpg" alt="Bike Batteries">
-        <h3>Bike Batteries</h3>
-        <a href="bike-batteries.html" class="btn">Book Now</a>
-      </div>
-
-      <div class="service">
-        <img src="inverter_battery.jpg" alt="Inverter Batteries">
-        <h3>Inverter Batteries</h3>
-        <a href="inverter-batteries.html" class="btn">Book Now</a>
-      </div>
-
+    <div class="service-card">
+      <img src="car-icon.png" alt="Car Batteries" />
+      <div>Car Batteries</div>
+    </div>
+    <div class="service-card">
+      <img src="bike-icon.png" alt="Bike Batteries" />
+      <div>Bike Batteries</div>
+    </div>
+    <div class="service-card">
+      <img src="truck-icon.png" alt="Commercial Batteries" />
+      <div>Commercial Batteries</div>
+    </div>
+    <div class="service-card">
+      <img src="home-icon.png" alt="Inverter Installation" />
+      <div>Inverter Installation</div>
+    </div>
+    <div class="service-card">
+      <img src="office-icon.png" alt="Office Spaces" />
+      <div>Office Spaces</div>
+    </div>
+    <div class="service-card">
+      <img src="ev-icon.png" alt="E-Vehicles" />
+      <div>E-Vehicles</div>
     </div>
   </section>
 
-  <!-- ABOUT US SECTION -->
-  <section id="about" class="about">
+  <button class="cta-button">Book Appointment</button>
+
+  <section class="section">
     <h2>About Amplyn</h2>
-    <p>At Amplyn, we offer trusted batteries from Amaron, Exide, Luminous, and Microtex. Quality assured products with doorstep service. </p>
+    <p>Amplyn delivers premium battery solutions at your doorstep. Fast, reliable, and professional service you can trust.</p>
   </section>
 
-  <!-- CONTACT US SECTION -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +91 99999 99999</p>
-    <p>Email: support@amplyn.com</p>
-    <p>Location: Hyderabad, India</p>
+  <section class="section">
+    <h2>Mission & Vision</h2>
+    <p><strong>Mission:</strong> Powering mobility with innovation and trust.</p>
+    <p><strong>Vision:</strong> To be the leading name in battery delivery solutions across the country.</p>
+  </section>
+
+  <section class="section">
+    <h2>Testimonials</h2>
+    <p>"Incredible service! My car battery was replaced within an hour."</p>
+    <p>"Extremely professional and reliable. Highly recommend Amplyn."</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Amplyn. All rights reserved.</p>
+    <div class="footer-column">
+      <h3>Amplyn</h3>
+      <p>Powering your ride, wherever you are.</p>
+    </div>
+    <div class="footer-column">
+      <h4>About</h4>
+      <a href="#">Our Story</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-column">
+      <h4>Services</h4>
+      <a href="#">Car Batteries</a>
+      <a href="#">Inverter Installation</a>
+      <a href="#">E-Vehicle Charging</a>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <a href="#">Email</a>
+      <a href="#">Phone</a>
+      <a href="#">Instagram</a>
+    </div>
   </footer>
-<script src="script.js"></script>
-
 </body>
 </html>
